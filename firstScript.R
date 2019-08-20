@@ -2,7 +2,7 @@ library("tidyverse")
 download.file("https://ndownloader.figshare.com/files/11492171",
               "data/SAFI_clean.csv", mode = "wb")
 interviews <- read_csv("data/SAFI_clean.csv", na = "NULL")
-#R runs one line at a time - it is similary to a calculator
+#R runs one line at a time - it is similar to a calculator
 #here are some simple mathematical operations
 3+5
 12/7
