@@ -108,6 +108,7 @@ hh_members
 #create new character vector
 respondent_wall_type<-c("muddaub","burntbricks","sunbricks")
 respondent_wall_type
+(respondent_wall_type<-c("muddaub","burntbricks","sunbricks"))
 
 #length of the data
 length(hh_members)
@@ -153,7 +154,7 @@ hh_members[3]
 #if put in an index bigger than the amount of data you have you get NA (missing)
 hh_members[5]
 #can assign an element to the missing space - can't do that with other programming languages!
-(hh_members[5]<-6)
+(hh_members[5]<-8)
 
 #to extract more than one element using indexes put c function inside square vector
 #can't use two or more numbers because a vector is one-dimensional
@@ -163,17 +164,17 @@ hh_members[c(2,3)]
 #             typing vector without [] will give you the data in the vector
 
 #1)create a new vector from another vector
-hh_members1 <- hh_members[c(2,2,1,3,3,3,4)]
+hh_members1 <- hh_members[c(2,2,1,3,3,3,4,5)]
 hh_members1
 
 #2)extracting elements from a vector using logical or comparison
-hh_members>3  #this just compares each element to the number 3
+hh_members>6  #this just compares each element to the number 3
 hh_members[hh_members>3] #this creates a new logical vector w/only true
 hh_members[c(FALSE,TRUE,TRUE,TRUE,TRUE)]
 
 #when R does a comparison it implicit/automatically does the cycling 
 #of the shorter vector (like 3) to match the longer vector (hh_members)
-#I think this is like an automatic for loop working in the backgrounds
+#I think this is like an automatic for loop working in the background
 
 #3)using names for elements of the vectors to extract
 #in python this is a key-value pair or dictionary
